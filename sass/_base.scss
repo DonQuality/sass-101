@@ -44,8 +44,69 @@ table {
 }
 
 /*base styles*/
-body{
-  background: white;
+$light-green: rgb(127, 171, 141);
+
+@mixin main-font {
   font-family: 'Gruppo';
+  color: azure;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+body{
+  @include main-font;
+  background: white;
   text-align: center;
+}
+
+form{
+  bottom: 11rem;
+  left: 32rem;
+  position: fixed;
+}
+
+select,
+input,
+label{
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.2rem;
+  padding: 0.3rem;
+  z-index: 500;
+}
+
+fieldset{
+  @include border-radius(0.5em);
+  background-color: rgba(198, 229, 198, 0.93);
+  box-shadow: 0 0 2rem rgb(86, 100, 90);
+  width: 20%;
+}
+
+legend{
+  background: white;
+  border-top-right-radius: 0.5rem;
+  color: rgb(18, 18, 39);
+  padding: 0.6rem;
+  text-align: left;
+}
+
+button{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+video{
+  background-size: cover;
+  bottom: 0rem;
+  min-height: 100%;
+  min-width: 100%;
+  right: 0rem;
+  width: auto;
+  z-index: -100;
 }

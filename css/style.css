@@ -43,9 +43,54 @@ table {
 
 /*base styles*/
 body {
-  background: white;
   font-family: 'Gruppo';
+  color: azure;
+  background: white;
   text-align: center; }
+
+form {
+  bottom: 11rem;
+  left: 32rem;
+  position: fixed; }
+
+select,
+input,
+label {
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.2rem;
+  padding: 0.3rem;
+  z-index: 500; }
+
+fieldset {
+  border-radius: 0.5em;
+  background-color: rgba(198, 229, 198, 0.93);
+  box-shadow: 0 0 2rem #56645a;
+  width: 20%; }
+
+legend {
+  background: white;
+  border-top-right-radius: 0.5rem;
+  color: #121227;
+  padding: 0.6rem;
+  text-align: left; }
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem; }
+
+video {
+  background-size: cover;
+  bottom: 0rem;
+  min-height: 100%;
+  min-width: 100%;
+  right: 0rem;
+  width: auto;
+  z-index: -100; }
 
 .center-box {
   margin-left: auto;
@@ -117,65 +162,17 @@ footer p {
 .inline-list {
   display: inline; }
 
-form {
-  bottom: 11rem;
-  left: 32rem;
-  position: fixed; }
-
-select,
-input,
-label {
-  border: none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.2rem;
-  padding: 0.3rem;
-  z-index: 500; }
-
-fieldset {
-  background-color: rgba(198, 229, 198, 0.93);
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  box-shadow: 0 0 2rem #56645a;
-  width: 20%; }
-
-legend {
-  background: white;
-  border-top-right-radius: 0.5rem;
-  color: #121227;
-  padding: 0.6rem;
-  text-align: left; }
-
-button {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 0.2rem;
-  margin-top: 0.2rem; }
-
 .registerButton {
-  border: none;
-  background-color: #7fab8d;
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
+  font-family: 'Gruppo';
   color: azure;
+  background-color: #7fab8d;
   font-size: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .5em;
+  margin: .5em auto;
   position: relative;
   padding: .2em;
-  width: 20%;
-  z-index: 99; }
-
-video {
-  background-size: cover;
-  bottom: 0rem;
-  min-height: 100%;
-  min-width: 100%;
-  right: 0rem;
-  width: auto;
-  z-index: -100; }
+  z-index: 99;
+  border: none; }
 
 .serviceInfo {
   background-color: #243429;
@@ -188,7 +185,6 @@ video {
   width: 100%; }
 
 .info-tag {
-  color: azure;
   font-size: 1.2rem;
   margin-left: 0.3rem; }
 
@@ -244,17 +240,9 @@ video {
   text-align: left;
   font-size: 2.5em;
   margin: 0; }
-
-.droplist li {
-  margin-left: .1em;
-  z-index: 100; }
-
-.drop-list li:hover {
-  background: #324c3a;
-  cursor: pointer;
-  margin-left: .2em;
-  color: white;
-  transition: margin-left .2s; }
+  .drop-list li {
+    margin-left: .1em;
+    z-index: 100; }
 
 .menu-btn {
   font-size: .5em;
@@ -270,6 +258,13 @@ video {
   color: black;
   cursor: pointer;
   transition: color 0.5s; }
+
+.drop-list li:hover {
+  background: #324c3a;
+  cursor: pointer;
+  margin-left: .2em;
+  color: white;
+  transition: margin-left .2s; }
 
 @media (max-width: 1100px) {
   ul {

@@ -11,4 +11,10 @@
   transition: color 0.5s;
 }
 
-
+.drop-list li:hover{
+  background: rgb(50, 76, 58);
+  cursor: pointer;
+  margin-left: .2em;
+  color: white;
+  transition: margin-left .2s;
+}
